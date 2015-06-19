@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>air_cleaner/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>203</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>18</ColumnWidth0><ColumnWidth1>981</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
+      <TerminalIO/>
+    <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1307</ColumnWidth1></Debug-Log></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-1751-22436</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>air_cleaner</ExpandedNode><ExpandedNode>air_cleaner/App</ExpandedNode><ExpandedNode>air_cleaner/User</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-12918-23455</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-21270-17592</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\led.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>88</SelStart><SelEnd>98</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\tim.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>31</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\motor.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>42</SelStart><SelEnd>52</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\buzzer.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>377</SelStart><SelEnd>377</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\beep.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>234</SelStart><SelEnd>234</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\buzzer.h</Filename><XPos>0</XPos><YPos>9</YPos><SelStart>279</SelStart><SelEnd>286</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\led.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1090</SelStart><SelEnd>1090</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\motor.c</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>498</SelStart><SelEnd>498</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\beep.c</Filename><XPos>0</XPos><YPos>3</YPos><SelStart>266</SelStart><SelEnd>266</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\button.c</Filename><XPos>0</XPos><YPos>51</YPos><SelStart>1589</SelStart><SelEnd>1589</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\sys.c</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>331</SelStart><SelEnd>331</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\button.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>126</SelStart><SelEnd>126</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\status.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>139</SelStart><SelEnd>150</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\status.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>549</SelStart><SelEnd>549</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\uart.c</Filename><XPos>0</XPos><YPos>30</YPos><SelStart>1155</SelStart><SelEnd>1155</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\filter.c</Filename><XPos>0</XPos><YPos>78</YPos><SelStart>1997</SelStart><SelEnd>1997</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\sys.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>118</SelStart><SelEnd>118</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\App\main.c</Filename><XPos>0</XPos><YPos>3</YPos><SelStart>213</SelStart><SelEnd>213</SelEnd></Tab><ActiveTab>17</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\filter.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\uart.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>237</SelStart><SelEnd>237</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\App\interrupt.c</Filename><XPos>0</XPos><YPos>24</YPos><SelStart>850</SelStart><SelEnd>850</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Evaluation\stm8\inc\iostm8s103f3.h</Filename><XPos>0</XPos><YPos>3833</YPos><SelStart>125261</SelStart><SelEnd>125278</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\User\tim.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>385</SelStart><SelEnd>385</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00d41740><key>iaridepm.enu1</key></Toolbar-00d41740></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>521</Bottom><Right>277</Right><x>-2</x><y>-2</y><xscreen>207</xscreen><yscreen>271</yscreen><sizeHorzCX>151537</sizeHorzCX><sizeHorzCY>395620</sizeHorzCY><sizeVertCX>204246</sizeVertCX><sizeVertCY>763504</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>119</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>121</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>176642</sizeHorzCY><sizeVertCX>151537</sizeVertCX><sizeVertCY>395620</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
