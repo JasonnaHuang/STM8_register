@@ -1,7 +1,7 @@
 #include "iostm8s103f3.h"
 #include "button.h"
 #include "sys.h"
-//#include "led.h"
+#include "led.h"
 #include "status.h"
 #include "buzzer.h"
 
@@ -37,19 +37,27 @@ void check_button(void)
 		{
 		case MODE_CLOSE:
 		  status->deviceStatus.mode = MODE_SMART;
+                  LED_All_ON();
 		  BuzzerStart(POLY_ON);
+                  
 		  break;
 		case MODE_SMART:
 		  status->deviceStatus.mode = MODE_SLEEP;
+                  LED_RED_ON();
 		  BuzzerStart(MONO);
+                  
 		  break;
 		case MODE_SLEEP:
 		  status->deviceStatus.mode = MODE_FLY;
+                  LED_GREEN_ON();
 		  BuzzerStart(MONO);
+                  
 		  break;
 		case MODE_FLY:
 		  status->deviceStatus.mode = MODE_SMART;
+                  LED_BLUE_ON();
 		  BuzzerStart(MONO);
+                  
 		  break;
 		default:
 		  break;
@@ -65,7 +73,9 @@ void _button_timeout_hander(void)
 {
   _default_start_time = 0;
   status->deviceStatus.mode = MODE_CLOSE;
+  LED_All_OFF();
   BuzzerStart(POLY_OFF);
+  
   //GPIO_WriteReverse(LED_GPIO_PORT, (GPIO_Pin_TypeDef)LED_GPIO_PINS);
  // PA_ODR ^= 0x08;
 }

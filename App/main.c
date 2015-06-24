@@ -24,8 +24,8 @@ int main(void)
   Uart_Init();
   asm("rim");//开全局中断
   
-  LED_All_ON();
-  BuzzerStart(POLY_ON);
+//  LED_All_ON();
+//  BuzzerStart(POLY_ON);
   UART1_SendString("hello,world");
   delay_ms(1000);
   while (1)

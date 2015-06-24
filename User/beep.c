@@ -16,9 +16,13 @@ void Beep_Init(void)
         PD_DDR |= 0x04;
         PD_CR1 |= 0x04;
         //PC5:SWBEEP
-        PC_DDR |= 0x20;
-        PC_CR1 |= 0x20;
-        PC_ODR |= 0x20;
+//        PC_DDR |= 0x20;
+//        PC_CR1 |= 0x20;
+//        PC_ODR |= 0x20;
+        //PB5:SWBEEP
+        PB_DDR |= 0x20;
+        PB_CR1 |= 0x20;
+        PB_ODR |= 0x20;
         
 }
 
@@ -44,14 +48,15 @@ void BEEP_SetFreq(unsigned short iFreq)
 void BeepPwrOn(void)
 {
 	//GPIO_WriteHigh(SWBEEP_GPIO_PORT,SWBEEP_GPIO_PINS);
-	//PD_ODR |= 0x04;
-        PC_ODR |= 0x20;
+	//PB_ODR &= ~0x20;
+        PB_ODR |= 0x20;
 }
+
 void BeepPwrOff(void)
 {
 	//GPIO_WriteLow(SWBEEP_GPIO_PORT,SWBEEP_GPIO_PINS);
-	//PD_ODR &= ~0x04;
-        PC_ODR &= ~0x20;
+	//PB_ODR |= 0x20;
+        PB_ODR &= ~0x20;
 }
 
 void BEEP_On(void)

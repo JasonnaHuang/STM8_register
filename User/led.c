@@ -61,3 +61,24 @@ void LED_All_OFF(void)
 {
   PC_ODR &= ~0xd0;
 }
+
+void LED_RED_ON(void)
+{
+        TIM1_CCER1 |= 0x01;
+	TIM1_CCER1 &= ~0x10;
+	TIM1_CCER2 &= ~0x10;
+}
+
+void LED_GREEN_ON(void)
+{
+        TIM1_CCER1 &= ~0x01;
+	TIM1_CCER1 |= 0x10;
+	TIM1_CCER2 &= ~0x10;
+}
+
+void LED_BLUE_ON(void)
+{
+        TIM1_CCER1 &= ~0x01;
+	TIM1_CCER1 &= ~0x10;
+	TIM1_CCER2 |= 0x10;
+}
