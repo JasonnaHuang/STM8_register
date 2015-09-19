@@ -75,7 +75,7 @@ void Beep_tick(void)
 {
   static unsigned char count = 0;
   count ++;
-  if(count >= 10)
+  if(count >= 100)
   {
     count = 0;
     BuzzerCtrl();

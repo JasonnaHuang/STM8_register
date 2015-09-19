@@ -6,11 +6,26 @@
 #ifndef __STATUS_H
 #define __STATUS_H
 
+typedef enum {
+        SMART_ON = 0x00,
+        SMART_OFF = 0x01
+}SmartCmd_t;
+
+typedef enum
+{
+	MOTOR_HALT = 0,
+	MOTOR_SLEEP = 1,
+	MOTOR_LOW = 2,
+	MOTOR_MIDIUM = 3,
+	MOTOR_HIGH = 4,
+	MOTOR_FLY = 5
+}motorPosition_t;
+
 enum {
 	MODE_CLOSE = 0,
 	MODE_SMART = 1,
 	MODE_SLEEP = 2,
-        MODE_FLY = 3,
+    MODE_FLY = 3,
 };
 
 typedef struct _device_status_t{
@@ -28,6 +43,10 @@ typedef struct _context_status_t{
     sensor_status_t   sensorStatus;   
 }context_status_t;
 
-unsigned char Status_Init(void);
 extern context_status_t *status;
+
+unsigned char Status_Init(void);
+void status_tick(void);
+void statusSmartMode(SmartCmd_t cmd);
+
 #endif

@@ -13,20 +13,19 @@
 int main(void)
 {
   unsigned short display_value;
-  //CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
+  //CLK_HSIPrescalerConfig(CLK_PRESCA LER_HSIDIV1);
   CLK_CKDIVR = 0x00;
   Tim1_Init();
   LED_Init();
   Motor_Init();
   Beep_Init();
   Button_Init();
-  Status_Init();
   Uart_Init();
+  if(!Status_Init())
+    return 0;
   asm("rim");//开全局中断
   
-//  LED_All_ON();
-//  BuzzerStart(POLY_ON);
-  UART1_SendString("hello,world");
+  UART1_SendString("start running...");
   delay_ms(1000);
   while (1)
   {
@@ -35,7 +34,6 @@ int main(void)
           display_value = get_PM2_5_value();
           Send_4Bit_Num( display_value );
     }
-//    PB_ODR ^= 0x20;
     delay_ms(1000);
   }
 }

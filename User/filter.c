@@ -7,18 +7,17 @@
 
 #define N 12
 
-static unsigned char adc_count = 0;
 //static u8 vaild_value_count = 0;//有效值标号计数
 static unsigned short vaild_value[N+1];//取出有效值作为平均计算
 volatile static unsigned short expect_final;//最终计算值
 unsigned long total_vaild = 0;
 static unsigned short uart_adc_value = 0;
 static unsigned short display_value = 0;
-static unsigned char compute_count = 0;
-static unsigned char compute_rate = 0;
+static unsigned short compute_count = 0;
+static unsigned short compute_rate = 0;
 static void compute_display_value(void);
 
-unsigned short filter(void)
+static void filter(void)
 {
   unsigned char i;
   total_vaild = 0;
@@ -30,25 +29,25 @@ unsigned short filter(void)
     total_vaild += vaild_value[i];
   }
   expect_final = total_vaild/N;
-  return expect_final;
+  return;
 }
-//10ms do once
+
 void filter_irq(void)
 {
-  adc_count ++;
-    if(adc_count > 100)
+    static unsigned char adc_count = 0;
+    
+    adc_count ++;
+    if(adc_count > 100)//10ms do once
     {
       adc_count = 0;
       filter();
-      /* Toggles LEDs */
-//      GPIO_WriteReverse(LED_GPIO_PORT, (GPIO_Pin_TypeDef)LED_GPIO_PINS);
     }
-  compute_count ++;
-  if(compute_count > compute_rate)
-  {
-    compute_count = 0;
-    compute_display_value();
-  }
+    compute_count ++;
+    if(compute_count > compute_rate)
+    {
+        compute_count = 0;
+        compute_display_value();
+    }
     return;
 }
 
@@ -64,12 +63,12 @@ static unsigned char compute_gap(unsigned short fly_past)
   if(fly_past > 100)
   {
     temp = 12;
-    compute_rate = 70;
+    compute_rate = 900;
   }
   else
   {
     temp = fly_past/10 + 1;
-    compute_rate = 200;
+    compute_rate = 2500;
   }
   return temp;
 }

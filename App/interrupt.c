@@ -3,13 +3,19 @@
 #include "sys.h"
 #include "button.h"
 #include "filter.h"
+#include "led.h"
+#include "motor.h"
 
+//period:100us
 #pragma vector = TIM1_OVR_UIF_vector
 __interrupt void TIM1_UPD_OVF_TRG_BRK_IRQHandler(void)
 {
   Beep_tick();
+  led_tick();
+  motor_tick();
   sys_tick_irq();
   filter_irq();
+  status_tick();
   //TIM1_ClearITPendingBit(TIM1_IT_UPDATE);
   TIM1_SR1 = ~0x01;
 }

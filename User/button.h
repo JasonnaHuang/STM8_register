@@ -6,7 +6,7 @@
 #define __BUTTON_H
 
 
-#define ShutDown_TimeOut 3000
+#define ShutDown_TimeOut 30000
 
 
 void Button_Init(void);
